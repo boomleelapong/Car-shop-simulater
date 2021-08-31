@@ -1,0 +1,33 @@
+Public Class Form1
+    Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
+
+    End Sub
+
+    Private Sub Label7_Click(sender As Object, e As EventArgs) Handles Label7.Click
+
+    End Sub
+
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim a, b, c, d, f, g As Integer
+        a = (Val(TextBox1.Text) * Val(TextBox2.Text)) / 100
+        b = Val(TextBox1.Text) - a
+        c = (b * Val(TextBox3.Text)) / 100
+        d = c * Val(TextBox4.Text)
+        f = b + d
+        g = Val(TextBox4.Text) * 12
+        TextBox5.Text = f / g
+        If (RadioButton1.Checked = True) Then
+            TextBox1.Text = 5350000
+        ElseIf (RadioButton2.Checked = True) Then
+            TextBox1.Text = 3359000
+        ElseIf (RadioButton3.Checked = True) Then
+            TextBox1.Text = 6259000
+        End If
+
+
+    End Sub
+End Class
